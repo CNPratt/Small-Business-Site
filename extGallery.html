@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Fully insured residential and commercial maintenance services including Remodeling, Handyman Services, Wood Fences, Power Washing and Deck Staining.">
+    <meta name="keywords" content="maintenance services, remodeling, handyman,home repair, wood fences">
+
+    <title>Alchemy Construction, Inc. - Fully Insured Maintenance</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="css/alchemy.css" />
+</head>
+
+<body>
+
+    <section id="homeSection"></section>
+
+    <div class="row no-gutters flex-nowrap d-flex" id="topBar">
+
+        <div class="col-2 d-flex justify-content-start">
+            <div class="topLinks"><button class="btn btn-sm btn-block text-nowrap navBtn">LOGO</button></div>
+        </div>
+
+        <div class="col-2 d-flex justify-content-center">
+            <div class="topLinks"><a href="index.html#homeSection"><button
+                        class="btn btn-sm btn-block text-nowrap navBtn">HOME</button></a></div>
+        </div>
+
+        <div class="col-3 d-flex justify-content-center">
+            <div class="topLinks"><a href="index.html#aboutSection"><button class="btn btn-sm btn-block text-nowrap navBtn">ABOUT
+                        US</button></a></div>
+        </div>
+
+        <div class="col-3 d-flex justify-content-center">
+            <div class="topLinks"><a href="#gallerySection"><button class="btn btn-sm btn-block text-nowrap navBtn">GALLERY</button></a></div>
+        </div>
+
+        <div class="col-2 d-flex justify-content-center">
+            <div class="topLinks"><a href="#contactSection"><button
+                        class="btn btn-sm btn-block text-nowrap navBtn">CONTACT US</button></a></div>
+        </div>
+    </div>
+
+    <div class="row no-gutters">
+        <div class="col-lg" id="bannerContainer">
+            <div id="bannerHolder">
+                <img id="mainImage" src="images/mainImage.jpg" loading="lazy" style="visibility:hidden;" onload="hideHolder(this)" height="100%" width="100%">
+            </div>
+
+            <div id="overlayGrid" class="row no-gutters position-absolute">
+                <div id="overlay1" class="col-lg-12 d-flex">
+                    <div id="centerText">ALCHEMY CONSTRUCTION, INC.</div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <section id="gallerySection"></section>
+    <div class="row no-gutters d-flex flex-nowrap extGallery" data-toggle="modal" data-target="#exampleModal">
+        <div class="col-xs gallCol">
+            <img src="images/extendedImages/barndoor1_optimized.jpg" loading="lazy" style="visibility:hidden;" onload="hasLoaded(this)" height="100%" width="100%">
+            <img src="images/extendedImages/carport1_optimized.jpg" loading="lazy" style="visibility:hidden;" onload="hasLoaded(this)" height="100%" width="100%">
+            <img src="images/extendedImages/carport3_optimized.jpg" loading="lazy" style="visibility:hidden;" onload="hasLoaded(this)" height="100%" width="100%">
+            <img src="images/extendedImages/deck1_optimized.jpg" loading="lazy" style="visibility:hidden;" onload="hasLoaded(this)" height="100%" width="100%">
+            <img src="images/extendedImages/deck2_optimized.jpg" loading="lazy" style="visibility:hidden;" onload="hasLoaded(this)" height="100%" width="100%">
+            <img class="lastGalImg" src="images/extendedImages/deck3_optimized.jpg" loading="lazy" style="visibility:hidden;" onload="hasLoaded(this)" height="100%" width="100%">
+            <img src="images/extendedImages/flooring1_optimized.jpg" loading="lazy" style="visibility:hidden;" onload="hasLoaded(this)" height="100%" width="100%">
+            <img src="images/extendedImages/livingroom3_optimized.jpg" loading="lazy" style="visibility:hidden;" onload="hasLoaded(this)" height="100%" width="100%">
+        </div>
+        <div class="col-xs gallCol">
+            <img src="images/extendedImages/deck8_optimized.jpg" loading="lazy" style="visibility:hidden;" onload="hasLoaded(this)" height="100%" width="100%">
+            <img src="images/extendedImages/fence2_optimized.jpg" loading="lazy" style="visibility:hidden;" onload="hasLoaded(this)" height="100%" width="100%">
+            <img src="images/extendedImages/fence3_optimized.jpg" loading="lazy" style="visibility:hidden;" onload="hasLoaded(this)" height="100%" width="100%">
+            <img src="images/extendedImages/fence4_optimized.jpg" loading="lazy" style="visibility:hidden;" onload="hasLoaded(this)" height="100%" width="100%">
+            <img src="images/extendedImages/fence5_optimized.jpg" loading="lazy" style="visibility:hidden;" onload="hasLoaded(this)" height="100%" width="100%">
+            <img src="images/extendedImages/fence6_optimized.jpg" loading="lazy" style="visibility:hidden;" onload="hasLoaded(this)" height="100%" width="100%">
+            <img src="images/extendedImages/porch1_optimized.jpg" loading="lazy" style="visibility:hidden;" onload="hasLoaded(this)" height="100%" width="100%">
+            <img src="images/extendedImages/indfloor1_optimized.jpg" loading="lazy" style="visibility:hidden;" onload="hasLoaded(this)" height="100%" width="100%">
+            <img src="images/extendedImages/livingroom1_optimized.jpg" loading="lazy" style="visibility:hidden;" onload="hasLoaded(this)" height="100%" width="100%">
+        </div>
+        <div class="col-xs gallCol">
+            <img src="images/extendedImages/deck4_optimized.jpg" loading="lazy" style="visibility:hidden;" onload="hasLoaded(this)" height="100%" width="100%">
+            <img src="images/extendedImages/deck5_optimized.jpg" loading="lazy" style="visibility:hidden;" onload="hasLoaded(this)" height="100%" width="100%">
+            <img src="images/extendedImages/gate1_optimized.jpg" loading="lazy" style="visibility:hidden;" onload="hasLoaded(this)" height="100%" width="100%">
+            <img src="images/extendedImages/house1_optimized.jpg" loading="lazy" style="visibility:hidden;" onload="hasLoaded(this)" height="100%" width="100%">
+            <img src="images/extendedImages/fence7_optimized.jpg" loading="lazy" style="visibility:hidden;" onload="hasLoaded(this)" height="100%" width="100%">
+            <img src="images/extendedImages/fence8_optimized.jpg" loading="lazy" style="visibility:hidden;" onload="hasLoaded(this)" height="100%" width="100%">
+            <img src="images/extendedImages/livingroom2_optimized.jpg" loading="lazy" style="visibility:hidden;" onload="hasLoaded(this)" height="100%" width="100%">
+        </div>
+    </div>
+
+    <div class="row no-gutters">
+        <div class="col-xl-3" id="textColumn">
+            <div class="bottomCards">
+                <div class="row">
+                <div class="col-12 d-flex justify-content-center">
+                    <h4 id="serviceHeadline">OUR SERVICE AREA</h4>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-1"></div>
+                <div class="col-10 d-flex justify-content-center embed-responsive embed-responsive-4by3">
+                    <!--                    <img id="servicePic" class="img-fluid" src="images/serviceArea.jpeg">
+-->
+
+                    <iframe style="height:85%;" class="embed-responsive-item serviceMap"
+                        src="https://www.google.com/maps/d/embed?mid=1nfTaLRCHK9JuJX7_mpXlHrN8B9YtzXs5" width="640"
+                        height="480"></iframe>
+                </div>
+                <div class="col-1"></div>
+            </div>
+            </div>
+            
+
+        </div>
+
+
+        <div class="col-xl-6 d-flex justify-content-center" id="formColumn">
+            <section id="contactSection">
+                <div id="formContainer">
+                    <form id="form" action="https://formsubmit.co/christophernathanpratt@gmail.com" method="post">
+
+                        <div class="row">
+                            <div class="col d-flex justify-content-center" id="estHeader">
+                                <h4 id="estHeaderText">QUICK ESTIMATE</h4>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="col-sm pb-3">
+                                <label for="name">Name</label>
+                                <input type="text" id="name" name="name" onchange="emailTitle()" class="form-control-sm"
+                                    required>
+                            </div>
+                            <div class="col-sm pb-3">
+                                <label for="email">E-mail</label>
+                                <input type="email" id="email" name="email" class="form-control-sm" required>
+                            </div>
+                            <div class="col-sm pb-3">
+                                <label for="tel">Contact Number</label>
+                                <input type="tel" id="tel" name="tel" class="form-control-sm" required>
+                            </div>
+
+                        </div>
+
+                        <div class="form-row">
+                            <div class="col-sm pb-3">
+                                <label for="stAddress">Site Address</label>
+                                <textarea id="stAddress" name="stAddress" class="form-control md-textarea"></textarea>
+                            </div>
+                            <div class="col-sm pb-3">
+                                <label for="message">Tell us how we can help!</label>
+                                <textarea id="message" name="message" class="form-control md-textarea"></textarea>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="col pb-3">
+                                <div class="bottomButtons">
+                                    <button type="submit" name="submit" id="submitButton"
+                                        class="btn btn-lg btn-dark">Send</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!---                    <input type="hidden" name="_captcha" value="false">
+-->
+                        <input type="hidden" name="_autoresponse"
+                            value="Thank you for contacting us at Alchemy Construction, Inc. We will respond to your request as soon as possible!">
+                        <input type="hidden" name="_subject" id="subjectLine" value="">
+                        <input type="hidden" name="_next" value="https://alchemyconstruction.tiiny.site">
+                    </form>
+                </div>
+        </div>
+        </section>
+
+
+        <div class="col-xl-3" id="lastColumn">
+            <div class="bottomCards">
+            <div class="row no-gutters">
+                <div class="col d-flex justify-content-center">
+                    <h4 id="intouchHeadline">GET IN TOUCH</h4>
+                </div>
+            </div>
+            
+
+            <div class="row no-gutters">
+                <div class="col contactInfo">
+                    <div>
+                        Phone: <a href="tel:8105999102">810-559-9102</a>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="row no-gutters">
+                <div class="col contactInfo">
+                    <div>
+                        Email: 
+                        <a href="mailto: service@phdmaintenance.com">service@phdmaintenance.com</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row no-gutters">
+                <div class="col contactInfo">
+                    <div>
+                        Fixr: <a href="https://www.fixr.com/sp.phd-maintenance-group-inc-.html">Our Page</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row no-gutters">
+                <div class="col contactInfo">
+                    <div>
+                        Facebook: <a href="https://www.facebook.com/PhD-Maintenance-Group-Inc-148740995137558/">Our Facebook</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row no-gutters">
+                <div class="col contactInfo">
+                    <div>
+                        <img  id="cardImage" src="images/cards.gif">
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+    </div>
+
+
+        <div class="modal fade modal-fullscreen" id="exampleModal" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog modal-xl" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div id="carousel" class="carousel slide">
+                            <ol class="carousel-indicators">
+                                <li data-target="#carousel" data-slide-to="0" class="active"></li>
+                                <li data-target="#carousel" data-slide-to="1"></li>
+                                <li data-target="#carousel" data-slide-to="2"></li>
+                                <li data-target="#carousel" data-slide-to="3"></li>
+                                <li data-target="#carousel" data-slide-to="4"></li>
+                                <li data-target="#carousel" data-slide-to="5"></li>
+                            </ol>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img class="d-block w-100" src="images/gallery1.jpg" alt="First slide">
+                                </div>
+                                <div class="carousel-item">
+                                    <img class="d-block w-100" src="images/gallery2.jpg" alt="Second slide">
+                                </div>
+                                <div class="carousel-item">
+                                    <img class="d-block w-100" src="images/gallery3.jpg" alt="Third slide">
+                                </div>
+                                <div class="carousel-item">
+                                    <img class="d-block w-100" src="images/gallery4.jpg" alt="Fourth slide">
+                                </div>
+                                <div class="carousel-item">
+                                    <img class="d-block w-100" src="images/gallery5.jpg" alt="Fifth slide">
+                                </div>
+                                <div class="carousel-item">
+                                    <img class="d-block w-100" src="images/gallery6.jpg" alt="Sixth slide">
+                                </div>
+                            </div>
+
+                            <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="carousel-control-next" href="#carousel" role="button" data-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Next</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="js/alchemy.js"></script>
+</body>
+
+</html>
