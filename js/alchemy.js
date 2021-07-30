@@ -1,3 +1,5 @@
+console.log("js loaded");
+
 function emailTitle(name) {
     let guestName = document.getElementById('name');
 
@@ -14,21 +16,24 @@ function emailTitle(name) {
 }
 
 function hasLoaded(img) {
-  try{
-        img.classList.add("loadedAnim");
-      img.style.visibility = "visible"
-  } catch{hasLoaded(img)};
-
+  try {
+    img.classList.add("loadedAnim");
+    img.style.visibility = "visible"
+  } catch (error) {
+    hasLoaded(img);
+  }
 //    console.log(img);
 }
 
-function hideHolder(img) {
-  try{
+function hideHolder() {
+
+  try {
     let holder=document.getElementById("bannerHolder");
-    holder.style.paddingTop = "0px"
-    hasLoaded(img);
+//    holder.style.paddingTop = "0px"
     console.log(holder);
-  } catch{hideHolder(img)}
+  } catch (error) {
+    hideHolder();
+  }
     
 }
 

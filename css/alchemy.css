@@ -9,9 +9,8 @@ body {
     animation-name: showLazyImg; 
     animation-duration: 0.7s; 
     animation-fill-mode: both; } 
-    @keyframes showLazyImg { from { opacity: 0; } to { opacity: 1; } 
+    @keyframes showLazyImg { from { opacity: 0; } to { opacity: 1;} 
 }
-
 
 #galleryRow1 {
     background-color: white;
@@ -37,7 +36,7 @@ form {
  padding-right: 20px;
 }
 
-h5 {
+h3 {
     text-align: center;
 }
 
@@ -65,6 +64,8 @@ a:hover{
 
 .servicesList {
     list-style-type: none;
+    font-size: large;
+    font-weight: bolder;
 }
 
 li {
@@ -104,14 +105,16 @@ li {
 #mainImage {
     max-width: 100%;
     max-height: 100%;
-    filter: brightness(65%);
+    height: auto;
+    filter: opacity(20%)
 }
 
 #bannerContainer {
     text-align: center;
     color: white;
     border-bottom: 5px solid #004324;
-    background-color: black;
+    background-color: white;
+    display: flex;
 }
 
 #centerText {
@@ -126,9 +129,9 @@ li {
 }
 
 #bannerHolder {
-/*
+
     padding-top: 33%;
-*/
+
 }
 
 .galleryImage {
@@ -151,8 +154,6 @@ li {
     margin-top: .5vw;
     vertical-align: middle;
     width: 100%;
-    height: 100%;
-    display: flex;
   }
 
 #topBar {
@@ -262,12 +263,6 @@ li {
     text-shadow: 1px 1px 3px black;
 }
 
-.topLinks {
-    color: black;
-    display: inline;
-    padding-right: 10px;
-}
-
 .modal.modal-fullscreen .modal-dialog {
     width: 100vw;
     height: 100vh;
@@ -298,8 +293,107 @@ li {
         font-size: x-small;
         
     }
+
+    .infoText {
+        font-size: small;
+    }
+
+    h3 {
+        font-size: small;
+    }
+
+    .infoDiv {
+        margin: 20px;
+        border-radius: 30px;
+        padding: 30px;
+    }
+
+    .headline {
+        padding-bottom: 5px;
+        text-decoration: underline;
+    }
+
+    .infoText {
+        padding-bottom: 5px;
+    }
+
+    .servicesList {
+        font-size: small;
+        font-weight: bolder;
+    }
+  }
+
+@media screen and (max-width: 300px) {
+    #centerText {
+        font-size: medium;
+    }
+
+    .infoText {
+        font-size: xx-small;
+    }
+
+    h3 {
+        font-size: x-small;
+    }
+
+    .navBtn {
+        font-size:xx-small;
+    }
+    .infoDiv {
+        margin: 10px;
+        border-radius: 30px;
+        padding: 20px;
+    }
+
+    .headline {
+        padding-bottom: 5px;
+        text-decoration: underline;
+    }
+
+    .infoText {
+        padding-bottom: 5px;
+    }
   }
 
 #overlay1 {
     justify-content: center;
+}
+
+#mainLogo {
+    width: 65%;
+    align-self: center;
+}
+
+
+
+
+#logo {
+    width: 40%;
+    min-width: 30px;
+    min-height: 20px;
+    max-width: 75px;
+    aspect-ratio: 3 / 2;
+    margin-left: 1vw;
+    margin-top: .25vw;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+#logoText {
+    color: white;
+    text-shadow: 1px 1px 3px black;
+    display: flex;
+
+}
+
+#logoButton {
+    display: flex;
+}
+
+
+.topLinks {
+    display: inline;
+    display: flex;
+    align-items: flex-end;
 }
