@@ -37,7 +37,6 @@ function hideHolder() {
     
 }
 
-
 /*
 const images = document.getElementsByTagName("img");
 

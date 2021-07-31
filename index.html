@@ -21,63 +21,54 @@
 <body>
     <script src="js/alchemy.js"></script>
 
-    <section id="homeSection"></section>
-
     <h1 class="d-none">Alchemy Construction, Southeast Michigan's premier construction, remodeling, and maintenance
         company</h1>
 
-    <nav class="navbar navbar-expand-md">
-            <div class="topLinks">
+    <nav class="navbar navbar-expand-md sticky-top py-0 px-8">
+                <img class="img-fluid py-1" src="images/favicon_crop.png" id="logo" alt="ACI logo, a pyramid of stacked gold bars">
+                
                 <a class="navbar-brand" href="index.html">
-
-                        <div class="row">
-                            <div class="col-3">
-                            <img src="images/favicon_crop.png" id="logo" alt="ACI logo, a pyramid of stacked gold bars">     
-                            </div>
-
-                        <div class="col-9 justify-content-left" id="logoText">
+                        <div id="logoText">
                             ACI
                         </div>
-                        </div>
-
-
                 </a>
-            </div>
 
-            <button class="navbar-toggler" style="color:white" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span>TOGGLE</span>
+
+            <button class="navbar-toggler" style="color:white" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" id="toggler">
+                <span>MENU</span>
               </button>
 
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
+            <ul class="navbar-nav  w-100 nav-justified">
+            
             <li class="nav-item topLinks">
-                <a href="#homeSection">
-                <button class="btn btn-sm btn-block text-nowrap navBtn">
+                <a class="nav-link" href="#">
+                <button class="btn btn-lg btn-block text-nowrap navBtn">
                     HOME
                 </button>
             </a>
             </li>
 
             <li class="nav-item topLinks">
-                <a href="#aboutSection">
-                <button class="btn btn-sm btn-block text-nowrap navBtn">
+                <a class="nav-link" href="#aboutSection">
+                <button class="btn btn-lg btn-block text-nowrap navBtn">
                     ABOUT US
                     </button>
                 </a>
             </li>
 
             <li class="nav-item topLinks">
-                <a href="extGallery.html#gallerySection">
+                <a class="nav-link" href="extGallery.html#gallerySection">
                     <button
-                        class="btn btn-sm btn-block text-nowrap navBtn">
+                        class="btn btn-lg btn-block text-nowrap navBtn">
                         GALLERY
                     </button>
                 </a>
             </li>
 
             <li class="nav-item topLinks">
-                <a href="#contactSection">
-                <button class="btn btn-sm btn-block text-nowrap navBtn"
+                <a class="nav-link" href="#contactSection">
+                <button class="btn btn-lg btn-block text-nowrap navBtn"
                         style="padding-left:0px; padding-right:0px;">
                         CONTACT US
                     </button>
@@ -85,8 +76,6 @@
             </li>
             </ul>
             </div>
-            
-
     </nav>
 
     
@@ -114,7 +103,8 @@
         </div>
     </div>
 
-    <section id="aboutSection">
+    <section id="aboutSection"></section>
+    <div id="cards">
         <div class="row no-gutters">
             <div class="col-xl-4">
                 <div class="infoDiv card">
@@ -174,7 +164,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </div>
 
 
     <div class="row no-gutters bg-white" id="galleryRow1" data-toggle="modal" data-target="#exampleModal">
@@ -220,17 +210,21 @@
             <div class="bottomCards card-body">
                 <h2 class="card-title" id="serviceHeadline">OUR SERVICE AREA</h2>
                 <!--                    <img id="servicePic" class="img-fluid" src="images/serviceArea.jpeg">
--->
+-->             <div class="card-text">
                 <iframe class="card-img-top serviceMap"
                     src="https://www.google.com/maps/d/embed?mid=1nfTaLRCHK9JuJX7_mpXlHrN8B9YtzXs5" width="640"
                     height="480"></iframe>
+                </div>
             </div>
         </div>
 
         <div class="card col-xl-6" id="formColumn">
-            <section id="contactSection">
+            <section id="contactSection"></section>
                 <div class="card-body">
                     <h2 class="card-title" id="estHeaderText">QUICK ESTIMATE</h2>
+                    <div class="card-text">
+
+                    
                     <form id="form" action="https://formsubmit.co/service@alchemyconstruction.co" method="post">
 
                         <div class="form-row">
@@ -280,8 +274,7 @@
                         <input type="hidden" name="_next" value="https://alchemyconstruction.tiiny.site">
                     </form>
                 </div>
-
-            </section>
+                </div>
         </div>
 
 
@@ -289,7 +282,7 @@
             <div class="card-body">
                 <h2 class="card-title" id="intouchHeadline">GET IN TOUCH</h2>
 
-
+                <div class="card-text">
                 <div class="row no-gutters">
                     <div class="col contactInfo">
                         <div>
@@ -324,7 +317,7 @@
                         </div>
                     </div>
                 </div>
-
+            </div>
             </div>
         </div>
     </div>
