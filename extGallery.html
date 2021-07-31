@@ -74,12 +74,12 @@
             <div id="overlayGrid" class="row no-gutters position-absolute">
                 <div id="overlay1" class="col-lg-12 d-flex">
                     <div id="centerText">
-                        <!--
+                        
                              ALCHEMY CONSTRUCTION, INC.
-    -->
+    
                     </div>
-                    <img src="images/logo_trans.png" id="mainLogo"
-                        alt="The ACI logo displayed over a background of a wooden deck">
+                    <!-- <img src="images/logo_trans.png" id="mainLogo"
+                        alt="The ACI logo displayed over a background of a wooden deck"> -->
                 </div>
 
             </div>
@@ -192,117 +192,104 @@
 
         <div class="col-xl-6 d-flex justify-content-center" id="formColumn">
             <section id="contactSection">
-                <div id="formContainer">
-                    <form id="form" action="https://formsubmit.co/service@alchemyconstruction.co" method="post">
+                <form id="form" action="https://formsubmit.co/service@alchemyconstruction.co" method="post">
 
-                        <div class="row">
-                            <div class="col d-flex justify-content-center" id="estHeader">
-                                <h2 id="estHeaderText">QUICK ESTIMATE</h2>
-                            </div>
+                    <div class="row">
+                        <div class="col d-flex justify-content-center" id="estHeader">
+                            <h2 id="estHeaderText">QUICK ESTIMATE</h2>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="col-sm pb-3">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" onchange="emailTitle()" class="form-control-sm"
+                                maxlength="250" required>
+                        </div>
+                        <div class="col-sm pb-3">
+                            <label for="email">E-mail</label>
+                            <input type="email" id="email" name="email" class="form-control-sm" required>
+                        </div>
+                        <div class="col-sm pb-3">
+                            <label for="tel">Contact Number</label>
+                            <input type="tel" id="tel" name="tel" class="form-control-sm" required>
                         </div>
 
-                        <div class="form-row">
-                            <div class="col-sm pb-3">
-                                <label for="name">Name</label>
-                                <input type="text" id="name" name="name" onchange="emailTitle()" class="form-control-sm"
-                                    maxlength="250" required>
-                            </div>
-                            <div class="col-sm pb-3">
-                                <label for="email">E-mail</label>
-                                <input type="email" id="email" name="email" class="form-control-sm" required>
-                            </div>
-                            <div class="col-sm pb-3">
-                                <label for="tel">Contact Number</label>
-                                <input type="tel" id="tel" name="tel" class="form-control-sm" required>
-                            </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="col-sm pb-3">
+                            <label for="stAddress">Site Address</label>
+                            <textarea id="stAddress" name="stAddress" class="form-control md-textarea"
+                                maxlength="1000"></textarea>
+                        </div>
+                        <div class="col-sm pb-3">
+                            <label for="message">Tell us how we can help!</label>
+                            <textarea id="message" name="message" class="form-control md-textarea"
+                                maxlength="1000"></textarea>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="col pb-3">
+
+                                <button type="submit" name="submit" id="submitButton"
+                                    class="btn btn-lg">Send</button>
 
                         </div>
+                    </div>
 
-                        <div class="form-row">
-                            <div class="col-sm pb-3">
-                                <label for="stAddress">Site Address</label>
-                                <textarea id="stAddress" name="stAddress" class="form-control md-textarea"
-                                    maxlength="1000"></textarea>
-                            </div>
-                            <div class="col-sm pb-3">
-                                <label for="message">Tell us how we can help!</label>
-                                <textarea id="message" name="message" class="form-control md-textarea"
-                                    maxlength="1000"></textarea>
-                            </div>
-                        </div>
-                        <div class="form-row">
-                            <div class="col pb-3">
-                                <div class="bottomButtons">
-                                    <button type="submit" name="submit" id="submitButton"
-                                        class="btn btn-lg btn-dark">Send</button>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!---                    <input type="hidden" name="_captcha" value="false">
+                    <!---                    <input type="hidden" name="_captcha" value="false">
 -->
-                        <input type="hidden" name="_autoresponse"
-                            value="Thank you for contacting us at Alchemy Construction, Inc. We will respond to your request as soon as possible!">
-                        <input type="hidden" name="_subject" id="subjectLine" value="">
-                        <input type="hidden" name="_next" value="https://alchemyconstruction.tiiny.site">
-                    </form>
-                </div>
+                    <input type="hidden" name="_autoresponse"
+                        value="Thank you for contacting us at Alchemy Construction, Inc. We will respond to your request as soon as possible!">
+                    <input type="hidden" name="_subject" id="subjectLine" value="">
+                    <input type="hidden" name="_next" value="https://alchemyconstruction.tiiny.site">
+                </form>
             </section>
         </div>
 
 
         <div class="col-xl-3" id="lastColumn">
-            <div class="bottomCards">
-                <div class="row no-gutters">
-                    <div class="col d-flex justify-content-center">
-                        <h2 id="intouchHeadline">GET IN TOUCH</h2>
-                    </div>
+            <div class="row no-gutters">
+                <div class="col d-flex justify-content-center">
+                    <h2 id="intouchHeadline">GET IN TOUCH</h2>
                 </div>
+            </div>
 
 
-                <div class="row no-gutters">
-                    <div class="col contactInfo">
-                        <div>
-                            Phone: <a href="tel:8106445934">810-644-5934</a>
-                        </div>
-                    </div>
-                </div>
-
-
-                <div class="row no-gutters">
-                    <div class="col contactInfo">
-                        <div>
-                            Email:
-                            <a href="mailto: service@alchemyconstruction.co">service@alchemyconstruction.co</a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- <div class="row no-gutters">
+            <div class="row no-gutters">
                 <div class="col contactInfo">
                     <div>
-                        Fixr: <a href="">Our Page</a>
-                    </div>
-                </div>
-            </div> -->
-
-                <div class="row no-gutters">
-                    <div class="col contactInfo">
-                        <div>
-                            Facebook: <a href="https://www.facebook.com/alchemyconstruction">Our Facebook</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="row no-gutters">
-                    <div class="col contactInfo">
-                        <div>
-                            <img id="cardImage" src="images/cards.gif" alt="Accepts all major credit payments">
-                        </div>
+                        Phone: <a href="tel:8106445934">810-644-5934</a>
                     </div>
                 </div>
             </div>
 
+
+            <div class="row no-gutters">
+                <div class="col contactInfo">
+                    <div>
+                        Email:
+                        <a href="mailto: service@alchemyconstruction.co">service@alchemyconstruction.co</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row no-gutters">
+                <div class="col contactInfo">
+                    <div>
+                        Facebook: <a href="https://www.facebook.com/alchemyconstruction">Our Facebook</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row no-gutters">
+                <div class="col contactInfo">
+                    <div>
+                        <img id="cardImage" src="images/cards.gif" alt="Accepts all major credit payments">
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 

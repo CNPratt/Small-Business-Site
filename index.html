@@ -23,48 +23,76 @@
 
     <section id="homeSection"></section>
 
-    <h1 class="d-none">Alchemy Construction, Southeast Michigan's premier construction, remodeling, and maintenance company</h1>
-    
-    <div class="row no-gutters flex-nowrap d-flex" id="topBar">
+    <h1 class="d-none">Alchemy Construction, Southeast Michigan's premier construction, remodeling, and maintenance
+        company</h1>
 
-        <div class="col-2 d-flex justify-content-start">
-              <img src="images/favicon_crop.png" id="logo" alt="ACI logo, a pyramid of stacked gold bars">                      
-
+    <nav class="navbar navbar-expand-md">
             <div class="topLinks">
-                <a href="index.html">
-                <button class="btn btn-sm btn-block text-nowrap navBtn" style="padding-left:0px;">
-                    <div id="logoText">
-                        ACI
-                    </div>
-                </button>                        
+                <a class="navbar-brand" href="index.html">
+
+                        <div class="row">
+                            <div class="col-3">
+                            <img src="images/favicon_crop.png" id="logo" alt="ACI logo, a pyramid of stacked gold bars">     
+                            </div>
+
+                        <div class="col-9 justify-content-left" id="logoText">
+                            ACI
+                        </div>
+                        </div>
+
+
                 </a>
-
             </div>
-        </div>
 
-        <div class="col-2 d-flex justify-content-center">
-            <div class="topLinks"><a href="#homeSection"><button
-                        class="btn btn-sm btn-block text-nowrap navBtn">HOME</button></a></div>
-        </div>
+            <button class="navbar-toggler" style="color:white" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span>TOGGLE</span>
+              </button>
 
-        <div class="col-3 d-flex justify-content-center">
-            <div class="topLinks"><a href="#aboutSection"><button class="btn btn-sm btn-block text-nowrap navBtn">ABOUT
-                        US</button></a></div>
-        </div>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+            <li class="nav-item topLinks">
+                <a href="#homeSection">
+                <button class="btn btn-sm btn-block text-nowrap navBtn">
+                    HOME
+                </button>
+            </a>
+            </li>
 
-        <div class="col-2 d-flex justify-content-center">
-            <div class="topLinks"><a href="extGallery.html#gallerySection"><button
-                        class="btn btn-sm btn-block text-nowrap navBtn">GALLERY</button></a></div>
-        </div>
+            <li class="nav-item topLinks">
+                <a href="#aboutSection">
+                <button class="btn btn-sm btn-block text-nowrap navBtn">
+                    ABOUT US
+                    </button>
+                </a>
+            </li>
 
-        <div class="col-3 d-flex justify-content-center">
-            <div class="topLinks"><a href="#contactSection"><button
-                        class="btn btn-sm btn-block text-nowrap navBtn" style="padding-left:0px; padding-right:0px;">CONTACT US</button></a></div>
-        </div>
-    </div>
+            <li class="nav-item topLinks">
+                <a href="extGallery.html#gallerySection">
+                    <button
+                        class="btn btn-sm btn-block text-nowrap navBtn">
+                        GALLERY
+                    </button>
+                </a>
+            </li>
 
-    <div class="row no-gutters">
-        <div class="col-lg" id="bannerContainer">
+            <li class="nav-item topLinks">
+                <a href="#contactSection">
+                <button class="btn btn-sm btn-block text-nowrap navBtn"
+                        style="padding-left:0px; padding-right:0px;">
+                        CONTACT US
+                    </button>
+                </a>
+            </li>
+            </ul>
+            </div>
+            
+
+    </nav>
+
+    
+
+    <div class="jumbotron-fluid p-0 m-0 row no-gutters">
+        <div class="container-fluid col-lg" id="bannerContainer">
             <div id="bannerHolder"></div>
             <img id="mainImage" srcset="" src="images/mainImage.jpg" loading="lazy" style="visibility:hidden;"
                 onload="hideHolder(), hasLoaded(this)" width="100%"
@@ -73,68 +101,83 @@
 
             <div id="overlayGrid" class="row no-gutters position-absolute">
                 <div id="overlay1" class="col-lg-12 d-flex">
-                    <div id="centerText">
-                        <!--
+                    <div class="display-4" id="centerText">
+                        
                          ALCHEMY CONSTRUCTION, INC.
--->
+
                     </div>
-                    <img src="images/logo_trans.png" id="mainLogo" width="100%" alt="The ACI logo displayed over a background of a wooden deck">
+                    <!-- <img src="images/logo_trans.png" id="mainLogo" width="100%"
+                        alt="The ACI logo displayed over a background of a wooden deck"> -->
                 </div>
 
             </div>
-
-
         </div>
     </div>
 
     <section id="aboutSection">
         <div class="row no-gutters">
             <div class="col-xl-4">
-                <div class="infoDiv">
-                    <h3 class="headline">ABOUT US</h3>
-                    <div class="infoText">
-                        Alchemy Construction, inc. is a licensed and fully insured residential and commercial remodeling business based in Livingston County, MI. We are a 100% family owned small business, proud of our Michigan roots! We pride ourselves on maintaining courteous, professional crews, consistent communication throughout the project, and transparent pricing. With 30+ years of construction and remodeling experience between us, we have the experience to help bring your unique vision for your home or business to life. 
+                <div class="infoDiv card">
+                    <div class="card-body">
+                        <h3 class="headline card-title">ABOUT US</h3>
+                        <div class="infoText card-text">
+                            Alchemy Construction, inc. is a licensed and fully insured residential and commercial
+                            remodeling
+                            business based in Livingston County, MI. We are a 100% family owned small business, proud of
+                            our
+                            Michigan roots! We pride ourselves on maintaining courteous, professional crews, consistent
+                            communication throughout the project, and transparent pricing. With 30+ years of
+                            construction
+                            and remodeling experience between us, we have the experience to help bring your unique
+                            vision
+                            for your home or business to life.
+                        </div>
                     </div>
+
                 </div>
 
             </div>
 
             <div class="col-xl-4">
-                <div class="infoDiv">
-                    <h3 class="headline">OUR SERVICES</h3>
-                    <div class="infoText">
-                        <ul class="servicesList" style="padding: 0;">
-                            <li style="border-top:2px dashed black">General Residential & Commercial Remodeling</li>
-                            <li>Unique and "One-off" Projects</li>
-                            <li>Fence & Deck Construction</li>
-                            <li>Home Repairs, Siding, & Flooring</li>
-                            <li>Kitchens & Basements</li>
-                        </ul>
+                <div class="infoDiv card">
+                    <div class="card-body">
+                        <h3 class="headline card-title">OUR SERVICES</h3>
+                        <div class="infoText card-text">
+                            <ul class="servicesList" style="padding: 0;">
+                                <li style="border-top:2px dashed black">General Residential & Commercial Remodeling</li>
+                                <li>Unique and "One-off" Projects</li>
+                                <li>Fence & Deck Construction</li>
+                                <li>Home Repairs, Siding, & Flooring</li>
+                                <li>Kitchens & Basements</li>
+                            </ul>
+                        </div>
                     </div>
+
                 </div>
 
             </div>
 
             <div class="col-xl-4">
-                <div class="infoDiv">
-                    <h3 class="headline">QUALIFICATIONS</h3>
-                    <div class="infoText">
-                        <ul class="servicesList" style="padding: 0;">
-                            <li style="border-top:2px dashed black">Full Workman's Comp. and Liability Insurance</li>
-                            <li>Licensed Residential Builder in the state of Michigan</li>
-                            <li>Vetted employees with proven driving records </li>
-                        </ul>
-                        
-                        
-                        
+                <div class="infoDiv card">
+                    <div class="card-body">
+                        <h3 class="headline card-title">QUALIFICATIONS</h3>
+                        <div class="infoTextcard-text">
+                            <ul class="servicesList" style="padding: 0;">
+                                <li style="border-top:2px dashed black">Full Workman's Comp. and Liability Insurance
+                                </li>
+                                <li>Licensed Residential Builder in the state of Michigan</li>
+                                <li>Vetted employees with proven driving records </li>
+                            </ul>
+                        </div>
                     </div>
+
                 </div>
             </div>
         </div>
     </section>
 
 
-    <div class="row no-gutters" id="galleryRow1" data-toggle="modal" data-target="#exampleModal">
+    <div class="row no-gutters bg-white" id="galleryRow1" data-toggle="modal" data-target="#exampleModal">
         <div class="col-sm thumbnail">
             <img class="galleryImage" data-target="#carousel" data-slide-to="0" src="images/gallery1.jpg" loading="lazy"
                 style="visibility:hidden;" onload="try {hasLoaded(this)} catch (error) {hasLoaded(this)}" height="100%"
@@ -173,47 +216,28 @@
     </div>
 
     <div class="row no-gutters">
-        <div class="col-xl-3" id="textColumn">
-            <div class="bottomCards">
-                <div class="row">
-                    <div class="col-12 d-flex justify-content-center">
-                        <h2 id="serviceHeadline">OUR SERVICE AREA</h2>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-1"></div>
-                    <div class="col-10 d-flex justify-content-center embed-responsive embed-responsive-4by3">
-                        <!--                    <img id="servicePic" class="img-fluid" src="images/serviceArea.jpeg">
+        <div class="col-xl-3 card" id="textColumn">
+            <div class="bottomCards card-body">
+                <h2 class="card-title" id="serviceHeadline">OUR SERVICE AREA</h2>
+                <!--                    <img id="servicePic" class="img-fluid" src="images/serviceArea.jpeg">
 -->
-
-                        <iframe style="height:85%;" class="embed-responsive-item serviceMap"
-                            src="https://www.google.com/maps/d/embed?mid=1nfTaLRCHK9JuJX7_mpXlHrN8B9YtzXs5" width="640"
-                            height="480"></iframe>
-                    </div>
-                    <div class="col-1"></div>
-                </div>
+                <iframe class="card-img-top serviceMap"
+                    src="https://www.google.com/maps/d/embed?mid=1nfTaLRCHK9JuJX7_mpXlHrN8B9YtzXs5" width="640"
+                    height="480"></iframe>
             </div>
-
         </div>
-    
 
-
-        <div class="col-xl-6 d-flex justify-content-center" id="formColumn">
+        <div class="card col-xl-6" id="formColumn">
             <section id="contactSection">
-                <div id="formContainer">
+                <div class="card-body">
+                    <h2 class="card-title" id="estHeaderText">QUICK ESTIMATE</h2>
                     <form id="form" action="https://formsubmit.co/service@alchemyconstruction.co" method="post">
-
-                        <div class="row">
-                            <div class="col d-flex justify-content-center" id="estHeader">
-                                <h2 id="estHeaderText">QUICK ESTIMATE</h2>
-                            </div>
-                        </div>
 
                         <div class="form-row">
                             <div class="col-sm pb-3">
                                 <label for="name">Name</label>
-                                <input type="text" id="name" name="name" onchange="emailTitle()" class="form-control-sm" maxlength="250"
-                                       required>
+                                <input type="text" id="name" name="name" onchange="emailTitle()" class="form-control-sm"
+                                    maxlength="250" required>
                             </div>
                             <div class="col-sm pb-3">
                                 <label for="email">E-mail</label>
@@ -229,43 +253,41 @@
                         <div class="form-row">
                             <div class="col-sm pb-3">
                                 <label for="stAddress">Site Address</label>
-                                <textarea id="stAddress" name="stAddress" class="form-control md-textarea" maxlength="1000"></textarea>
+                                <textarea id="stAddress" name="stAddress" class="form-control md-textarea"
+                                    maxlength="1000"></textarea>
                             </div>
                             <div class="col-sm pb-3">
                                 <label for="message">Tell us how we can help!</label>
-                                <textarea id="message" name="message" class="form-control md-textarea" maxlength="1000"></textarea>
+                                <textarea id="message" name="message" class="form-control md-textarea"
+                                    maxlength="1000"></textarea>
                             </div>
                         </div>
                         <div class="form-row">
                             <div class="col pb-3">
-                                <div class="bottomButtons">
-                                    <button type="submit" name="submit" id="submitButton"
-                                            class="btn btn-lg btn-dark">
-                                        Send
-                                    </button>
-                                </div>
+
+                                <button type="submit" name="submit" id="submitButton" class="btn btn-lg">
+                                    Send
+                                </button>
+
                             </div>
                         </div>
 
                         <!---                    <input type="hidden" name="_captcha" value="false">
             -->
                         <input type="hidden" name="_autoresponse"
-                               value="Thank you for contacting us at Alchemy Construction, Inc. We will respond to your request as soon as possible!">
+                            value="Thank you for contacting us at Alchemy Construction, Inc. We will respond to your request as soon as possible!">
                         <input type="hidden" name="_subject" id="subjectLine" value="">
                         <input type="hidden" name="_next" value="https://alchemyconstruction.tiiny.site">
                     </form>
                 </div>
+
             </section>
         </div>
 
 
-        <div class="col-xl-3" id="lastColumn">
-            <div class="bottomCards">
-                <div class="row no-gutters">
-                    <div class="col d-flex justify-content-center">
-                        <h2 id="intouchHeadline">GET IN TOUCH</h2>
-                    </div>
-                </div>
+        <div class="card col-xl-3" id="lastColumn">
+            <div class="card-body">
+                <h2 class="card-title" id="intouchHeadline">GET IN TOUCH</h2>
 
 
                 <div class="row no-gutters">
@@ -286,14 +308,6 @@
                     </div>
                 </div>
 
-                <!-- <div class="row no-gutters">
-                    <div class="col contactInfo">
-                        <div>
-                            Fixr: <a href="">Our Page</a>
-                        </div>
-                    </div>
-                </div> -->
-
                 <div class="row no-gutters">
                     <div class="col contactInfo">
                         <div>
@@ -310,72 +324,73 @@
                         </div>
                     </div>
                 </div>
+
             </div>
         </div>
     </div>
 
 
-        <div class="modal fade modal-fullscreen" id="exampleModal" tabindex="-1" role="dialog" aria-hidden="true">
-            <div class="modal-dialog modal-xl" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                    </div>
-                    <div class="modal-body">
-                        <div id="carousel" class="carousel slide">
-                            <ol class="carousel-indicators">
-                                <li data-target="#carousel" data-slide-to="0" class="active"></li>
-                                <li data-target="#carousel" data-slide-to="1"></li>
-                                <li data-target="#carousel" data-slide-to="2"></li>
-                                <li data-target="#carousel" data-slide-to="3"></li>
-                                <li data-target="#carousel" data-slide-to="4"></li>
-                            </ol>
-                            <div class="carousel-inner">
-                                <div class="carousel-item active">
-                                    <img class="d-block w-100" src="images/gallery1.jpg" alt="First slide">
-                                </div>
-                                <div class="carousel-item">
-                                    <img class="d-block w-100" src="images/gallery2.jpg" alt="Second slide">
-                                </div>
-                                <!-- <div class="carousel-item">
+    <div class="modal fade modal-fullscreen" id="exampleModal" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-xl" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div id="carousel" class="carousel slide">
+                        <ol class="carousel-indicators">
+                            <li data-target="#carousel" data-slide-to="0" class="active"></li>
+                            <li data-target="#carousel" data-slide-to="1"></li>
+                            <li data-target="#carousel" data-slide-to="2"></li>
+                            <li data-target="#carousel" data-slide-to="3"></li>
+                            <li data-target="#carousel" data-slide-to="4"></li>
+                        </ol>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img class="d-block w-100" src="images/gallery1.jpg" alt="First slide">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block w-100" src="images/gallery2.jpg" alt="Second slide">
+                            </div>
+                            <!-- <div class="carousel-item">
                                     <img class="d-block w-100" src="images/gallery3.jpg" alt="Third slide">
                                 </div> -->
-                                <div class="carousel-item">
-                                    <img class="d-block w-100" src="images/gallery4.jpg" alt="Third slide">
-                                </div>
-                                <div class="carousel-item">
-                                    <img class="d-block w-100" src="images/gallery5.jpg" alt="Fourth slide">
-                                </div>
-                                <div class="carousel-item">
-                                    <img class="d-block w-100" src="images/gallery6.jpg" alt="Fifth slide">
-                                </div>
+                            <div class="carousel-item">
+                                <img class="d-block w-100" src="images/gallery4.jpg" alt="Third slide">
                             </div>
-
-                            <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
-                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                <span class="sr-only">Previous</span>
-                            </a>
-                            <a class="carousel-control-next" href="#carousel" role="button" data-slide="next">
-                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                <span class="sr-only">Next</span>
-                            </a>
+                            <div class="carousel-item">
+                                <img class="d-block w-100" src="images/gallery5.jpg" alt="Fourth slide">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block w-100" src="images/gallery6.jpg" alt="Fifth slide">
+                            </div>
                         </div>
+
+                        <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carousel" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
                     </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
                 </div>
             </div>
         </div>
+    </div>
 
 
-        <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
-        <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
-        <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 
-    
+
 </body>
 
 </html>
