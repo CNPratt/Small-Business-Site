@@ -27,7 +27,7 @@
     <h1 class="d-none">Alchemy Construction, Southeast Michigan's premier construction, remodeling, and maintenance
         company</h1>
 
-    <div class="row no-gutters flex-nowrap d-flex" id="topBar">
+    <!-- <div class="row no-gutters flex-nowrap d-flex" id="topBar">
 
         <div class="col-2 d-flex">
             <img src="images/favicon_crop.png" id="logo" alt="ACI logo, a pyramid of stacked gold bars">
@@ -63,7 +63,63 @@
                         class="btn navbar-btn btn-sm btn-block text-nowrap navBtn"
                         style="padding-left:0px; padding-right:0px;">CONTACT US</button></a></div>
         </div>
-    </div>
+    </div> -->
+
+    <nav class="navbar navbar-expand-md sticky-top py-0 px-8">
+        <img class="img-fluid py-1" src="images/favicon_crop.png" id="logo"
+            alt="ACI logo, a pyramid of stacked gold bars">
+
+        <a class="navbar-brand" href="index.html">
+            <div id="logoText">
+                ACI
+            </div>
+        </a>
+
+
+        <button class="navbar-toggler" style="color:white" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation" id="toggler">
+            <span>MENU</span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav  w-100 nav-justified">
+
+                <li class="nav-item topLinks">
+                    <a class="nav-link" href="#">
+                        <button class="btn btn-lg btn-block text-nowrap navBtn">
+                            HOME
+                        </button>
+                    </a>
+                </li>
+
+                <li class="nav-item topLinks">
+                    <a class="nav-link" href="#aboutSection">
+                        <button class="btn btn-lg btn-block text-nowrap navBtn">
+                            ABOUT US
+                        </button>
+                    </a>
+                </li>
+
+                <li class="nav-item topLinks">
+                    <a class="nav-link" href="extGallery.html#gallerySection">
+                        <button class="btn btn-lg btn-block text-nowrap navBtn">
+                            GALLERY
+                        </button>
+                    </a>
+                </li>
+
+                <li class="nav-item topLinks">
+                    <a class="nav-link" href="#contactSection">
+                        <button class="btn btn-lg btn-block text-nowrap navBtn"
+                            style="padding-left:0px; padding-right:0px;">
+                            CONTACT US
+                        </button>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
 
     <div class="row no-gutters">
         <div class="col-lg" id="bannerContainer">
@@ -167,129 +223,129 @@
     </div>
 
     <div class="row no-gutters">
-        <div class="col-xl-3" id="textColumn">
-            <div class="bottomCards">
-                <div class="row">
-                    <div class="col-12 d-flex justify-content-center">
-                        <h2 id="serviceHeadline">OUR SERVICE AREA</h2>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-1"></div>
-                    <div class="col-10 d-flex justify-content-center embed-responsive embed-responsive-4by3">
-                        <!--                    <img id="servicePic" class="img-fluid" src="images/serviceArea.jpeg">
+        <div class="col-xl-3">
+            <div class="card infoDiv">
+                <div class="card-body">
+                    <h2 class="card-title" id="serviceHeadline">OUR SERVICE AREA</h2>
+                    <!--                    <img id="servicePic" class="img-fluid" src="images/serviceArea.jpeg">
 -->
-
-                        <iframe style="height:85%;" class="embed-responsive-item serviceMap"
+                    <div class="card-text embed-responsive embed-responsive-1by1">
+                        <iframe class="card-img-top embed-responsive-item serviceMap"
                             src="https://www.google.com/maps/d/embed?mid=1nfTaLRCHK9JuJX7_mpXlHrN8B9YtzXs5" width="640"
                             height="480"></iframe>
                     </div>
-                    <div class="col-1"></div>
                 </div>
             </div>
+
+        </div>
+
+        <div class="col-xl-6">
+            <div class="card infoDiv">
+                <section id="contactSection"></section>
+                <div class="card-body">
+                    <h2 class="card-title" id="estHeaderText">QUICK ESTIMATE</h2>
+                    <div class="card-text">
+
+
+                        <form id="form" action="https://formsubmit.co/service@alchemyconstruction.co" method="post">
+
+                            <div class="form-row">
+                                <div class="col-sm pb-3">
+                                    <label for="name">Name</label>
+                                    <input type="text" id="name" name="name" onchange="emailTitle()"
+                                        class="form-control-sm" maxlength="250" required>
+                                </div>
+                                <div class="col-sm pb-3">
+                                    <label for="email">E-mail</label>
+                                    <input type="email" id="email" name="email" class="form-control-sm" required>
+                                </div>
+                                <div class="col-sm pb-3">
+                                    <label for="tel">Contact Number</label>
+                                    <input type="tel" id="tel" name="tel" class="form-control-sm" required>
+                                </div>
+
+                            </div>
+
+                            <div class="form-row">
+                                <div class="col-sm pb-3">
+                                    <label for="stAddress">Site Address</label>
+                                    <textarea id="stAddress" name="stAddress" class="form-control md-textarea"
+                                        maxlength="1000"></textarea>
+                                </div>
+                                <div class="col-sm pb-3">
+                                    <label for="message">Tell us how we can help!</label>
+                                    <textarea id="message" name="message" class="form-control md-textarea"
+                                        maxlength="1000"></textarea>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="col pb-3">
+
+                                    <button type="submit" name="submit" id="submitButton" class="btn btn-lg">
+                                        Send
+                                    </button>
+
+                                </div>
+                            </div>
+
+                            <!---                    <input type="hidden" name="_captcha" value="false">
+            -->
+                            <input type="hidden" name="_autoresponse"
+                                value="Thank you for contacting us at Alchemy Construction, Inc. We will respond to your request as soon as possible!">
+                            <input type="hidden" name="_subject" id="subjectLine" value="">
+                            <input type="hidden" name="_next" value="https://alchemyconstruction.tiiny.site">
+                        </form>
+                    </div>
+                </div>
+            </div>
+
         </div>
 
 
-        <div class="col-xl-6 d-flex justify-content-center" id="formColumn">
-            <section id="contactSection">
-                <form id="form" action="https://formsubmit.co/service@alchemyconstruction.co" method="post">
+        <div class="col-xl-3">
+            <div class="card infoDiv">
+<div class="card-body">
+                <h2 class="card-title" id="intouchHeadline">GET IN TOUCH</h2>
 
-                    <div class="row">
-                        <div class="col d-flex justify-content-center" id="estHeader">
-                            <h2 id="estHeaderText">QUICK ESTIMATE</h2>
+                <div class="card-text">
+                    <div class="row no-gutters">
+                        <div class="col contactInfo">
+                            <div>
+                                Phone: <a href="tel:8106445934">810-644-5934</a>
+                            </div>
                         </div>
                     </div>
 
-                    <div class="form-row">
-                        <div class="col-sm pb-3">
-                            <label for="name">Name</label>
-                            <input type="text" id="name" name="name" onchange="emailTitle()" class="form-control-sm"
-                                maxlength="250" required>
-                        </div>
-                        <div class="col-sm pb-3">
-                            <label for="email">E-mail</label>
-                            <input type="email" id="email" name="email" class="form-control-sm" required>
-                        </div>
-                        <div class="col-sm pb-3">
-                            <label for="tel">Contact Number</label>
-                            <input type="tel" id="tel" name="tel" class="form-control-sm" required>
-                        </div>
 
-                    </div>
-
-                    <div class="form-row">
-                        <div class="col-sm pb-3">
-                            <label for="stAddress">Site Address</label>
-                            <textarea id="stAddress" name="stAddress" class="form-control md-textarea"
-                                maxlength="1000"></textarea>
-                        </div>
-                        <div class="col-sm pb-3">
-                            <label for="message">Tell us how we can help!</label>
-                            <textarea id="message" name="message" class="form-control md-textarea"
-                                maxlength="1000"></textarea>
-                        </div>
-                    </div>
-                    <div class="form-row">
-                        <div class="col pb-3">
-
-                                <button type="submit" name="submit" id="submitButton"
-                                    class="btn btn-lg">Send</button>
-
+                    <div class="row no-gutters">
+                        <div class="col contactInfo">
+                            <div>
+                                Email:
+                                <a href="mailto: service@alchemyconstruction.co">service@alchemyconstruction.co</a>
+                            </div>
                         </div>
                     </div>
 
-                    <!---                    <input type="hidden" name="_captcha" value="false">
--->
-                    <input type="hidden" name="_autoresponse"
-                        value="Thank you for contacting us at Alchemy Construction, Inc. We will respond to your request as soon as possible!">
-                    <input type="hidden" name="_subject" id="subjectLine" value="">
-                    <input type="hidden" name="_next" value="https://alchemyconstruction.tiiny.site">
-                </form>
-            </section>
-        </div>
+                    <div class="row no-gutters">
+                        <div class="col contactInfo">
+                            <div>
+                                Facebook: <a href="https://www.facebook.com/alchemyconstruction">Our
+                                    Facebook</a>
+                            </div>
+                        </div>
+                    </div>
 
-
-        <div class="col-xl-3" id="lastColumn">
-            <div class="row no-gutters">
-                <div class="col d-flex justify-content-center">
-                    <h2 id="intouchHeadline">GET IN TOUCH</h2>
-                </div>
-            </div>
-
-
-            <div class="row no-gutters">
-                <div class="col contactInfo">
-                    <div>
-                        Phone: <a href="tel:8106445934">810-644-5934</a>
+                    <div class="row no-gutters">
+                        <div class="col contactInfo">
+                            <div>
+                                <img id="cardImage" src="images/cards.gif" alt="Accepts all major credit payments">
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-
-
-            <div class="row no-gutters">
-                <div class="col contactInfo">
-                    <div>
-                        Email:
-                        <a href="mailto: service@alchemyconstruction.co">service@alchemyconstruction.co</a>
-                    </div>
-                </div>
             </div>
-
-            <div class="row no-gutters">
-                <div class="col contactInfo">
-                    <div>
-                        Facebook: <a href="https://www.facebook.com/alchemyconstruction">Our Facebook</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="row no-gutters">
-                <div class="col contactInfo">
-                    <div>
-                        <img id="cardImage" src="images/cards.gif" alt="Accepts all major credit payments">
-                    </div>
-                </div>
-            </div>
+            
         </div>
     </div>
 
